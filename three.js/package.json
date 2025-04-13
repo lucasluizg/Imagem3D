@@ -1,0 +1,20 @@
+{
+  "name": "three",
+  "version": "1.0.0",
+  "description": "Este relatório comenta sobre um estudo introdutório sobre o Three.js. O Three.js é uma biblioteca e API Javascript que cria animações em 3D usando WebGL. Neste estudo executaremos um código para criar um site num server local com um cubo tridimensional se movendo, para fins de nos familiarizar com a ferramenta.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "three": "^0.175.0"
+  },
+  "devDependencies": {
+    "vite": "^6.2.5"
+  },
+  "type": "commonjs"
+}
