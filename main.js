@@ -13,7 +13,7 @@ function init() {
     0.1,
     1000
   );
-  camera.position.set(0, 1, 3);
+  camera.position.set(0, 1, 1.5);
 
   renderer = new THREE.WebGLRenderer({ antialias: true });
   renderer.setSize(window.innerWidth, window.innerHeight);
