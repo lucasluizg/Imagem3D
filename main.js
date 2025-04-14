@@ -28,7 +28,7 @@ function init() {
 
   // precisa ser alterado conforme a extensão do arquivo. Agora lendo MTL e OBJ...
   const mtlLoader = new THREE.MTLLoader();
-  mtlLoader.setPath('modelos/');
+  mtlLoader.setPath('modelos/textures/');
   mtlLoader.load('apple_final.mtl', function (materials) {
   materials.preload();
 
