@@ -27,10 +27,11 @@ function init() {
   scene.add(light);
 
   // precisa ser alterado conforme a extensão do arquivo. Agora lendo MTL e OBJ...
-  const mtlLoader = new THREE.MTLLoader();
-  mtlLoader.setPath('modelos/');
-  mtlLoader.load('apple_final.mtl', function (materials) {
-  materials.preload();
+  
+ // const mtlLoader = new THREE.MTLLoader();
+ // mtlLoader.setPath('modelos/');
+ // mtlLoader.load('apple_final.mtl', function (materials) {
+//  materials.preload();
 
   const objLoader = new THREE.OBJLoader();
   objLoader.setMaterials(materials);
