@@ -28,18 +28,18 @@ function init() {
 
   // precisa ser alterado conforme a extensão do arquivo. Agora lendo MTL e OBJ...
   
- // const mtlLoader = new THREE.MTLLoader();
- // mtlLoader.setPath('modelos/');
- // mtlLoader.load('apple_final.mtl', function (materials) {
-//  materials.preload();
+ const mtlLoader = new THREE.MTLLoader();
+ mtlLoader.setPath('modelos/');
+  mtlLoader.load('apple_final.mtl', function (materials) {
+  materials.preload();
 
-  //const objLoader = new THREE.OBJLoader();
-  //objLoader.setMaterials(materials);
-  //objLoader.setPath('modelos/');
- // objLoader.load('apple_final.obj', function (object) {
-   // scene.add(object);
- // }, undefined, function (error) {
- //   console.error('Deu ruim no load do modelo OBJ/MTL:', error);
+  const objLoader = new THREE.OBJLoader();
+  objLoader.setMaterials(materials);
+  objLoader.setPath('modelos/');
+ objLoader.load('apple_final.obj', function (object) {
+    scene.add(object);
+  }, undefined, function (error) {
+    console.error('Deu ruim no load do modelo OBJ/MTL:', error);
   });
 
   // ...carregando arquivo até aqui
