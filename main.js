@@ -30,7 +30,6 @@ function init() {
   
   const mtlLoader = new THREE.MTLLoader();
   mtlLoader.setPath('modelos/');
-  mtlLoader.setResourcePath('modelos/textures/');
   mtlLoader.load('apple_final.mtl', function (materials) {
   materials.preload();
 
